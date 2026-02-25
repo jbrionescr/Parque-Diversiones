@@ -1,0 +1,52 @@
+{
+  "atracciones": [
+    {
+      "nombreAtraccion": "Pacuare",
+      "categoria": "familiar",
+      "estado": "activo",
+      "alturaMinima": "90",
+      "tiempoEsperaAprox": "10",
+      "id": "b2d8"
+    },
+    {
+      "id": "cd34",
+      "nombreAtraccion": "Tren Teletica",
+      "categoria": "",
+      "estado": "",
+      "alturaMinima": "90",
+      "tiempoEsperaAprox": "5"
+    },
+    {
+      "nombreAtraccion": "Torre",
+      "categoria": "extrema",
+      "estado": "activo",
+      "alturaMinima": "140",
+      "tiempoEsperaAprox": "5",
+      "id": "2a26"
+    },
+    {
+      "nombreAtraccion": "Carros Chocones",
+      "categoria": "familiar",
+      "estado": "activo",
+      "alturaMinima": "110",
+      "tiempoEsperaAprox": "5",
+      "id": "b686"
+    },
+    {
+      "id": "412b",
+      "nombreAtraccion": "Martillo",
+      "categoria": "extrema",
+      "estado": "activo",
+      "alturaMinima": "130",
+      "tiempoEsperaAprox": "10"
+    },
+    {
+      "id": "5bbf",
+      "nombreAtraccion": "Reventazón",
+      "categoria": "acuaticas",
+      "estado": "activo",
+      "alturaMinima": "90",
+      "tiempoEsperaAprox": "5"
+    }
+  ]
+}

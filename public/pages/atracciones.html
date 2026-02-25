@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/atracciones.css">
+    <title>Atracciones</title>
+</head>
+
+<body>
+  <video autoplay loop muted playsinline class="back-video">
+        <source src="../img/videoparque.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <div class="features">
+    <div class="consultATrac">
+        <h3>Consultar Atracción por ID</h3>
+        <input type="text" id="idBusqueda" placeholder="Ingrese ID de atracción">
+        <button id="btnBuscarId">Buscar</button>
+        <div id="resultadoBusqueda"></div>
+    </div>
+
+    <form class="formulario">
+
+        <label for="nombreAtraccion">Nombre Atraccion</label>
+        <input type="text" id="nombreAtraccion" name="nombreAtraccion"><br>
+        <label for="categori">Categoria</label>
+        <select id="categoria" name="categoria">
+            <option value="">Seleccione una categoria</option>
+            <option value="infantil">Infantil</option>
+            <option value="familiar">Familiar</option>
+            <option value="extrema">Extrema</option>
+            <option value="acuaticas">Acuaticas</option>
+        </select><br>
+        <label for="estad">Estado</label>
+        <select id="estado" name="estado">
+            <option value="">Seleccione un estado</option>
+            <option value="activo">Activo</option>
+            <option value="en mantenimiento">En mantenimiento</option>
+            <option value="fuera de servicio">Fuera de servicio</option>
+        </select><br>
+        <label for="alturaMinima">Altura Minima</label>
+        <input type="number" id="alturaMinima" name="alturaMinima"><br>
+        <label for="tiempoEsperaAprox">Tiempo de Espera Aprox</label>
+        <input type="number" id="tiempoEsperaAprox" name="tiempoEsperaAprox"><br>
+        <button id="btnGuardar">Guardar</button>
+    </form>
+
+    <div id="atraccionesData"></div>
+
+    <div id="modalEditar">
+        <div class="blabla">
+            <h3>Editar Atraccion</h3>
+            <input type="hidden" id="editId">
+            <input type="text" id="editNombre" placeholder="Nombre Atraccion"><br>
+            <select id="editCategoria" name="categoria">
+                <option value="">Seleccione una categoria</option>
+                <option value="infantil">Infantil</option>
+                <option value="familiar">Familiar</option>
+                <option value="extrema">Extrema</option>
+                <option value="acuaticas">Acuaticas</option>
+            </select><br>
+            <select id="editEstado" name="estado">
+                <option value="">Seleccione un estado</option>
+                <option value="activo">Activo</option>
+                <option value="en mantenimiento">En mantenimiento</option>
+                <option value="fuera de servicio">Fuera de servicio</option>
+            </select><br>
+            <input type="number" id="editAlturaMinima" placeholder="Altura Minima"><br>
+            <input type="number" id="editTiempoEsperaAprox" placeholder="Tiempo de Espera Aprox"><br>
+            <button id="btnGuardarCambios">Guardar</button>
+            <button onclick="document.getElementById('modalEditar').style.display='none'">Cancelar</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <script type="module" src="../js/atracciones.js"></script>
+</body>
+
+</html>

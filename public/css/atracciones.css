@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.consultATrac{
+    
+    padding: 0.5rem;
+    background: var(--bg-card);
+    backdrop-filter: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    text-align: left;
+    transition: var(--transition);
+}
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Asegura que esté por detrás */
+    /* Opcional: opacidad si el video no es transparente */
+    /* opacity: 0.5; */
+    opacity: 0.9;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que esté por delante */
+    color: white;
+    text-align: center;
+    top: 10%;
+}
+#modalEditar{
+    display:none; 
+    position:fixed; 
+    top:0; left:0; 
+    width:100%; 
+    height:100%; 
+    background:rgba(0,0,0,0.5); 
+    z-index:1000;
+}
+.blabla{
+    background:white; 
+    margin:10% auto; 
+    padding:20px; 
+    width:300px; 
+    border-radius:8px;
+}
+.features {
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.formulario {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    backdrop-filter: blur(10px); /* Efecto cristal */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    color: white;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.formulario input, 
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+.formulario input:focus, 
+.formulario select:focus {
+    outline: 2px solid #60a5fa;
+    background: #fff;
+}
+
+#btnGuardar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #827a0f; /* Verde esmeralda para el botón guardar */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#btnGuardar:hover {
+    background: #0edfca;
+    transform: translateY(-2px);
+}
+
+#btnGuardar:active {
+    transform: translateY(0);
+}
